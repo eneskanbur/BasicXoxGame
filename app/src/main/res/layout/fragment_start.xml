@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -14,36 +15,36 @@
         tools:context=".StartFragment">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnStartGame"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:text="@string/startFragmentBtnStr"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/editTextText2"
-            app:layout_constraintStart_toStartOf="@+id/editTextText2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+            app:layout_constraintEnd_toEndOf="@+id/etName2"
+            app:layout_constraintStart_toStartOf="@+id/etName2"
+            app:layout_constraintTop_toBottomOf="@+id/etName2"
             app:layout_constraintVertical_bias="0.5" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvStart"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="48dp"
             android:text="@string/startFragmentTv"
             android:textAlignment="center"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextText"
-            app:layout_constraintEnd_toEndOf="@+id/editTextText"
+            app:layout_constraintBottom_toTopOf="@+id/etName1"
+            app:layout_constraintEnd_toEndOf="@+id/etName1"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextText"
+            app:layout_constraintStart_toStartOf="@+id/etName1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/etName1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -51,15 +52,15 @@
             android:hint="@string/startFragmentEt"
             android:inputType="text"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+            app:layout_constraintBottom_toTopOf="@+id/etName2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/tvStart"
             app:layout_constraintVertical_bias="0.5" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/etName2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -67,11 +68,11 @@
             android:hint="@string/startFragmentEt"
             android:inputType="text"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="@+id/editTextText"
+            app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
+            app:layout_constraintEnd_toEndOf="@+id/etName1"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextText"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            app:layout_constraintStart_toStartOf="@+id/etName1"
+            app:layout_constraintTop_toBottomOf="@+id/etName1"
             app:layout_constraintVertical_bias="0.5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
